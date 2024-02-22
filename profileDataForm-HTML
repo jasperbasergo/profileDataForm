@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+  <style>
+    div.a {
+      text-align: center;
+    }
+
+    .button {
+      background-color: black;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div class="a">
+  <h2>HTML Forms</h2>
+
+  <form action="/action_page.php" target="_blank">
+    <label for="fname">First name</label>
+    <br><input type="text" id="fname"><br>
+
+    <label for="mname">Middle name</label>
+    <br><input type="text" id="mname"><br>
+
+    <label for="lname">Last name</label>
+    <br><input type="text" id="lname"><br>
+
+    <label >Sex</label>
+    <input type="radio" name="sex" id="male"><label for="male">Male</label>
+    <input type="radio" name="sex" id="female"><label for="female">Female</label><br>
+
+    <label for="Department">Department</label>
+    <select id="Department" name="course">
+      <option value="CompEngTech">Computer Engineering Technology</option>
+      <option value="ElecEngTech">Electronics Engineering Technology</option>
+      <option value="ElecEngTech">Electrical Engineering Technology</option>
+      <option value="MechEngTech">Mechanical Engineering Technology</option>
+    </select>
+
+    <label for="batch">Batch</label>
+    <select id="batch" name="batch">
+      <option value="30">30</option>
+      <option value="31">31</option>
+      <option value="32">32</option>
+      <option value="33">33</option>
+    </select><br>
+
+    <label for="section">Section</label>
+    <input type="text" id="section"><br>
+
+    <label for="contact">Contact Number</label><br>
+    <input type="text" id="contact"><br>
+
+    <button type="submit" class="button">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
